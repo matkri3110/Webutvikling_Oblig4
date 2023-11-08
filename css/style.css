@@ -281,6 +281,47 @@ li{
     list-style-type: none;
 }
 
+/* Analyse.html */
+
+#keyword-research ul {
+    list-style-type: none;
+    /* Removes the default list bullet */
+    padding: 0;
+    margin: 0;
+}
+
+#keyword-research li {
+    margin-bottom: 10px;
+    /* Adds space below each list item */
+    padding-left: 15px;
+    /* Adds space to the left of each list item */
+    position: relative;
+}
+
+#keyword-research li::before {
+    content: '•';
+    /* Adds a custom bullet */
+    color: #0077cc;
+    /* Example color for the custom bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#keyword-research li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    line-height: 1.6;
+     /* Makes the text within each list item more readable */
+}
+
+#keyword-research h2 {
+    margin-bottom: 10px;
+}
+
+#keyword-research p {
+    margin-bottom: 10px;
+}
 
 
 /* Desktop design */ 
@@ -389,6 +430,47 @@ li{
         text-decoration: none;
         color: rgb(204, 204, 204);
 
+    }
+
+    /* analyse.html */
+
+    #keyword-research ul {
+        list-style-type: none;
+        /* Removes the default list bullet */
+        padding: 0;
+        margin: 0;
+    }
+
+    #keyword-research li {
+        margin-bottom: 10px;
+        /* Adds space below each list item */
+        padding-left: 15px;
+        /* Adds space to the left of each list item */
+        position: relative;
+    }
+
+    #keyword-research li::before {
+        content: '•';
+        /* Adds a custom bullet */
+        color: #0077cc;
+        /* Example color for the custom bullet */
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #keyword-research li {
+        margin-bottom: 10px;
+        padding-left: 15px;
+        line-height: 1.6; /* Makes the text within each list item more readable */
+    }
+
+    #keyword-research h2{
+        margin-bottom: 10px;
+    }
+
+    #keyword-research p{
+        margin-bottom: 10px;
     }
 
     /* footer */
