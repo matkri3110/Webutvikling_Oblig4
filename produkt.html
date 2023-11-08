@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- "Head" seksjonen, inneholder metadata, koblinger til stylesheet og komponenter som FontAwsome -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <!--Lenker til Font Awsome-ikonstilene for UI-elementer-->
+    <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+    <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>BIRDIES</title>
+</head>
+
+<body>
+    <!-- "Body" seksjonen inneholder hoveddelen av nettstedets innhold. -->
+    <header>
+        <!--Toppseksjonen på nettsiden, inneholder navigasjon og viktig info-->
+        <nav class="nav">
+            <a id="breadcrumb" href="index.html">Hjem > Produkter > Herresko</a>
+            <!-- Brødsmulesti for bedre brukernavigasjon -->
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <!-- Skjult avkrysningsboks brukes til å håndtere klikkhendelse for mobilmenyen -->
+            <label for="nav__checkbox" class="nav__toggle">
+                <i id="search-box" class="fa-solid fa-magnifying-glass"></i>
+                <i id="menu" class="fa-solid fa-bars"></i>
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </label>
+            <!-- Hovednavigasjonsmenyen med lenker til ulike deler av nettstedet -->
+            <ul class="nav__menu">
+                <li><a href="index.html" id="Logo">BIRDIES</a></li>
+                <li><a href="produkt.html">Herresko</a></li>
+                <li><a href="produkt.html">Damesko</a></li>
+                <li><a href="produkt.html">Junior</a></li>
+                <li><a href="#">Min Konto</a></li>
+                <li><a href="handlekurv.html">Handlekurv</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hovedinnholdet på siden -->
+        <div class="container">
+            <!-- En beholder som inneholder grid for siden.-->
+        <h1>Herresko</h1>
+        <section class="flex-section-produkt">
+            <!-- En seksjon som brukes til layout for siden -->
+            <article>
+                <img src="img/sneaker.png" alt="bilde av sneakers">
+                Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a>
+                <!-- Produktbilde, med kreditering for bildet -->
+                <p class="priser">1749,-</p>
+                <!-- klasse for priser på produkter -->
+                <p class="størrelser">Størrelse: 42</p>
+                <!-- klasse for størrelser på produkter -->
+                <a href="handlekurv.html" class="shop-nå-btn">Legg i handlekurv</a>
+                <!-- knapp for å legge til produkter i handlekurv -->
+            </article>
+            <article>
+                <img src="img/sneaker.png" alt="bilde av sneakers">
+                Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a>
+                <!-- Produktbilde, med kreditering for bildet -->
+                <p class="priser">1350,-</p>
+                <p class="størrelser">Størrelse: 42</p>
+                <a href="handlekurv.html" class="shop-nå-btn">Legg i handlekurv</a>
+            </article>
+            <article>
+                <img src="img/sneaker.png" alt="bilde av sneakers">
+                Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a>
+                <!-- Produktbilde, med kreditering for bildet -->
+                <p class="priser">1499,-</p>
+                <!--klasse for priser for produkter-->
+                <p class="størrelser">Størrelse: 42</p>
+                <!--klasse for størrelser for produkter-->
+                <a href="handlekurv.html" class="shop-nå-btn">Legg i handlekurv</a>
+                <!--knapp for å legge til produkter i handlekurv-->
+            </article>
+        </section>             
+        </div>
+    </main>
+    <footer>
+        <!-- Bunnen av nettsiden, inneholder en liten navigasjonsmeny for ekstra informasjon, for eks. retur, kjøpsvilkår osv-->
+        <div class="footer-container">
+            <!--En beholder som inneholder footeren-->
+            <div class="social-icons">
+                <!--En beholder som inneholder sosiale medier ikoner-->
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <nav class="footer-nav">
+                <!--En klasse som inneholder ul listen med footer navigasjonen-->
+                <ul>
+                    <li><a href="#">Om BIRDIES</a></li>
+                    <li><a href="#">Hio Team</a></li>
+                    <li><a href="#">Kjøpsvilkår</a></li>
+                    <li><a href="#">Retur</a></li>
+                    <li><a href="#">Kundeservice</a></li>
+                    <li><a href="#">Informasjon</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article class="footer-bottom">
+            <!--En klasse som inneholder informasjon om hvem som har laget nettsiden-->
+            <p>Copyright &copy;2023; Designed by <span class="designer">Mathias</span></p>
+        </article>
+    </footer>
+    </body>
+</html>
