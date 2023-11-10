@@ -122,61 +122,106 @@
             <section id="accessibility-analysis">
                 <h2>UU (Tilgjengelighets) Analyse</h2>
                 <!-- Lighthouse Accessibility Analysis -->
-                <section id="lighthouse-uu-analysis">
-                    <h3>Lighthouse Tilgjengelighetsanalyse</h3>
-                    <p>Analysen med Lighthouse avdekket et par områder for forbedring, spesielt når det gjelder fargekontrast og
-                        navngivning av lenker.</p>
-                    <article id="index-uu-analysis">
-                        <h3>Index.html Tilgjengelighetsanalyse</h3>
-                        <p>To hovedproblemer ble identifisert: Fargenes kontrast er ikke tilstrekkelig, noe som kan gjøre teksten vanskelig
-                            å lese for personer med nedsatt syn. Videre har lenker på siden ikke et gjenkjennbart navn, noe som kan forvirre
-                            brukere som er avhengige av skjermlesere. For å forbedre dette, vil vi øke kontrastforholdet for å møte
-                            WCAG-kriteriene og gi alle lenkene klare og informative navn.</p>
-                        <img src="img/Lighthouse_index.html_pre_change_accessibility.png"
-                            alt="Lighthouse tilgjengelighetsanalyse for index.html viser to hovedproblemer for forbedring.">
-                    </article>
-                    <article id="produkt-uu-analysis">
-                        <h3>Produkt.html Tilgjengelighetsanalyse</h3>
-                        <p>To hovedproblemer ble identifisert: Fargenes kontrast er ikke tilstrekkelig, noe som kan gjøre teksten vanskelig
-                            å lese for personer med nedsatt syn. Videre har lenker på siden ikke et gjenkjennbart navn, noe som kan forvirre
-                            brukere som er avhengige av skjermlesere. For å forbedre dette, vil vi øke kontrastforholdet for å møte
-                            WCAG-kriteriene og gi alle lenkene klare og informative navn.</p>
-                        <img src="img/Lighthouse_produkt.html_pre_change_accessibility.png"
-                            alt="Lighthouse tilgjengelighetsanalyse for produkt.html viser to hovedproblemer for forbedring.">
-                    </article>
-                    <article id="handlekurv-uu-analysis">
-                        <h3>Handlekurv.html Tilgjengelighetsanalyse</h3>
-                        <p>To hovedproblemer ble identifisert: Fargenes kontrast er ikke tilstrekkelig, noe som kan gjøre teksten vanskelig
-                            å lese for personer med nedsatt syn. Videre har lenker på siden ikke et gjenkjennbart navn, noe som kan forvirre
-                            brukere som er avhengige av skjermlesere. For å forbedre dette, vil vi øke kontrastforholdet for å møte
-                            WCAG-kriteriene og gi alle lenkene klare og informative navn.</p>
-                        <img src="img/handlekurv.html_lighthouse_pre_change_accessibility.png"
-                            alt="Lighthouse tilgjengelighetsanalyse for handlekurv.html viser to hovedproblemer for forbedring.">
-                    </article>
-
+                <section id="uu-analysis-lighthouse">
+                    <h3>UU (Tilgjengelighets) Analyse</h3>
+                    <p>Analysen utført med Lighthouse har identifisert viktige områder for forbedring i tilgjengelighet på tvers av
+                        forskjellige sider av nettstedet. To hovedproblemer som går igjen på alle sider er utilstrekkelig fargekontrast
+                        og lenker som mangler et gjenkjennelig navn. Disse problemene kan påvirke brukeropplevelsen for personer med
+                        synshemming eller de som er avhengige av skjermlesere.</p>
+                
+                    <!-- Individual page analysis for index.html -->
+                    <section id="index-uu-analysis">
+                        <h4>Index.html Tilgjengelighetsanalyse</h4>
+                        <p>Tilgjengelighetsscore: 87/100. Selv om siden skårer relativt høyt, vil forbedringer i fargekontrast og
+                            lenkenavn gi en mer tilgjengelig brukeropplevelse.</p>
+                        <img src="img/Lighthouse_index.html_pre_change_accessibility.png" alt="Tilgjengelighetsanalyse for index.html">
+                    </section>
+                
+                    <!-- Individual page analysis for produkt.html -->
+                    <section id="produkt-uu-analysis">
+                        <h4>Produkt.html Tilgjengelighetsanalyse</h4>
+                        <p>Tilgjengelighetsscore: 86/100. Forbedringer anbefales spesielt for fargekontrast og tydelige navn på lenker
+                            for å støtte bedre navigasjon for alle brukere.</p>
+                        <img src="img/Lighthouse_produkt.html_pre_change_accessibility.png" alt="Tilgjengelighetsanalyse for produkt.html">
+                    </section>
+                
+                    <!-- Individual page analysis for handlekurv.html -->
+                    <section id="handlekurv-uu-analysis">
+                        <h4>Handlekurv.html Tilgjengelighetsanalyse</h4>
+                        <p>Tilgjengelighetsscore: 84/100. Selv om denne siden også følger mange beste praksiser for tilgjengelighet,
+                            peker analysen på behovet for forbedret fargekontrast og lenkenavn.</p>
+                        <img src="img/handlekurv.html_lighthouse_pre_change_accessibility.png" alt="Tilgjengelighetsanalyse for handlekurv.html">
+                    </section>
+                
+                    <!-- Explanation about the steps to be taken -->
+                    <p>Basert på disse funnene, vil de nødvendige tilgjengelighetsforbedringene inkludere å øke fargekontrasten mellom
+                        bakgrunn og forgrunn samt å gi alle lenker beskrivende navn som kan identifiseres av skjermlesere. Disse
+                        endringene vil bidra til å heve den generelle tilgjengelighetsscoren og gjøre nettstedet mer tilgjengelig for
+                        alle brukere.</p>
                 </section>
+
                 <!-- WebAIM WAVE Analysis -->
                 <section id="webaim-uu-analysis">
                     <h3>WebAIM WAVE Analyse</h3>
                     <p>Ytterligere tilgjengelighetsanalyse med WebAIM's WAVE verktøy har identifisert lignende problemer som Lighthouse,
                         og gir også detaljert informasjon om problemer som krever manuell gjennomgang.</p>
-                    <!-- Include any screenshots from the WebAIM analysis -->
-                    <img src="path-to-your-screenshot/webaim-wave.png" alt="WebAIM WAVE tilgjengelighetsanalyse for index.html">
                     <p>Basert på disse analysene vil vi iverksette tiltak for å forbedre nettstedets tilgjengelighet, inkludert
                         oppdatering av fargekontraster og forbedring av lenkenavn for skjermlesere.</p>
+                    
+                        <section id="webaim-index-analysis">
+                            <h4>Index.html Tilgjengelighetsanalyse med WebAIM</h4>
+                            <p>WebAIM's WAVE analyse for index.html har identifisert flere tilgjengelighetsproblemer som må adresseres. Det ble
+                            funnet 4 tilgjengelighetsfeil og 6 kontrastfeil, som kan påvirke brukernes evne til å oppfatte innholdet. I
+                            tillegg ble det gitt 2 varsler som bør undersøkes nærmere for å sikre en bedre tilgjengelighetsstandard. På den
+                            positive siden har siden 4 tilgjengelighetsfunksjoner og 10 strukturelle elementer som bidrar til en god
+                            grunnstruktur for tilgjengelighet. Det ble ikke funnet noen ARIA-roller, noe som kan indikere et område for
+                            forbedring, spesielt for dynamisk innhold og avanserte brukergrensesnittkomponenter. Dersom vi ser på den litt mer detaljerte analysen til høyre nedenfor
+                            så kan vi se en litt mer detaljert analyse av sidens elementer. Vi kan blant annet se at "Facebook" og "instagram" linkene in footer ikke er fungerende, 
+                            dette er fordi siden ikke har noen instagram/facebookside å linke til. Vi kan også se at WebAIM reagerer på lav kontrast på teksten under bildene fra Pixabay. 
+                            Vi har også 2 alerts som omhandler navigasjonen her reagerer WebAIM på at de tre produktsidene linker til hverandre, 
+                            men på grunn av at vi ikke har laget noen andre produktsider så er ikke dette noe som vi kan gjøre noe med.</p>
+                            <img src="img/Webaim_index.html_pre_change_stor.png" alt="WebAIM WAVE tilgjengelighetsanalyse for index.html">
+                            <img src="img/Webaim_index.html_pre_change_details_stor.png" alt="Detaljert WebAIM WAVE tilgjengelighetsanalyse for index.html">
+
+                        <section id="webaim-produkt-analysis">
+                            <h4>Produkt.html Tilgjengelighetsanalyse med WebAIM</h4>
+                            <p>WAVE-verktøyets gjennomgang av 'produkt' siden avdekket en rekke tilgjengelighetsproblemer som er viktige å rette
+                                opp. Det ble oppdaget 4 tilgjengelighetsfeil, 6 kontrastfeil, og 3 varsler som krever ytterligere gjennomgang.
+                                Til tross for disse problemene, påpeker analysen også 4 positive tilgjengelighetsegenskaper og 8 strukturelle
+                                elementer som er korrekt implementert. Igjen reagerer WebAIM på kontrastnivået på teksten som referer til pixabay, hvor bildene er hentet. 
+                                Vi ser også de samme varslene rundt navigasjonen som linker til samme side, i tilegg til at elementene i footeren ikke har noen link enda.</p>
+                        
+                            <p>For å forbedre siden vil vi adressere disse feilene, spesielt ved å øke kontrasten der det er nødvendig og sikre
+                                at all navigasjon og interaktive elementer er tydelig merket og tilgjengelige.</p>
+                            <img src="img/Webaim_produkt.html_pre_change_stor.png" alt="WebAIM WAVE tilgjengelighetsanalyse for produkt.html">
+                            <img src="img/Webaim_produkt.html_pre_change_details.png" alt="Detaljert WebAIM WAVE tilgjengelighetsanalyse for produkt.html">
+                        </section>
+
+                        <section id="webaim-handlekurv-analysis">
+                            <h4>Handlekurv.html Tilgjengelighetsanalyse med WebAIM</h4>
+                            <p>WAVE-analysen for 'handlekurv' siden har påvist 4 tilgjengelighetsfeil, 2 kontrastfeil, og 4 varsler. Disse
+                                resultatene peker på spesifikke områder som trenger forbedringer for å gjøre siden mer tilgjengelig for alle
+                                brukere. Også her kan vi se at beskrivelsene fra pixabay har dårlig fargekontrast. 
+                                WebAIM reagerer også på at vi ikke har linket Facebook og Instagram linkene i footer. Det samme gjelder linkene i navigasjonen som linker til samme produkt.html side. </p>
+            
+                            <p>For å forbedre tilgjengeligheten på denne siden, vil vi rette opp i alle identifiserte feil, forbedre
+                                kontrastforholdet mellom tekst og bakgrunn, og sikre at alle interaktive elementer er tydelig merket og
+                                navigerbare.</p>
+                            <img src="img/Webaim_handlekurv.html_pre_change_stor.png" alt="WebAIM WAVE tilgjengelighetsanalyse for handlekurv.html">
+                            <img src="img/Webaim_handlekurv.html_pre_change_details_stor.png" alt="Detaljert WebAIM WAVE tilgjengelighetsanalyse for handlekurv.html">
+                        </section>
+                    
+                    
+                    
+                    </section>
+                
+                
+                
+                
                 </section>
 
 
 
-
-
-
-                <h2>Tilgjengelighetsanalyse (UU)</h2>
-                <p>Her kommer resultatene fra tilgjengelighetsanalysen før forbedringene. 
-                    Denne delen dekker tilgjengelighetsanalyser utført av Lighthouse, som er en integrert del av universell utforming av
-                    nettstedet.</p>
-                <!-- Include screenshots and descriptions -->
-                <!-- ... -->
             </section>
             <!-- Comparison Table Section -->
             <section id="comparison-table">
@@ -185,6 +230,24 @@
                     <!-- Structure your table with headings for ChatGPT results, Lighthouse, and WebAIM -->
                     <!-- ... -->
                 </table>
+                <table border="1">
+                    <tr>
+                        <th>ChatGPT Resultater</th>
+                        <th>Lighthouse Resultater</th>
+                        <th>WebAIM Resultater</th>
+                    </tr>
+                    <tr>
+                        <td>[ChatGPT data]</td>
+                        <td>[Lighthouse data]</td>
+                        <td>[WebAIM data]</td>
+                    </tr>
+                    <!-- Flere rader etter behov -->
+                </table>
+                
+                <!-- Analyse og Sammenligning -->
+                <p>
+                    Her kan du diskutere dine observasjoner og sammenligninger mellom de forskjellige verktøyenes resultater.
+                </p>
             </section>
 
             <!-- Improvement Measures Section -->
