@@ -40,8 +40,8 @@
         </header>
         <main>
             <h1>Nettsted Analyse og Forbedring</h1>
-            <!-- Keyword Research Section -->
-            <!-- Keyword Research Section -->
+            
+            <!-- Keyword Research Seksjon -->
             <section id="keyword-research">
                 <h2>Nøkkelord Undersøkelse</h2>
                 <p>Basert på nettstedets innhold og målgruppe, er følgende nøkkelord valgt ut:</p>
@@ -87,7 +87,7 @@
                     produktbeskrivelser, og andre relevante områder for å forbedre nettstedets synlighet og rangering i søkemotorer.</p>
             </section>
 
-            <!-- SEO Analysis Section -->
+            <!-- SEO Analyse Seksjon -->
             <section id="seo-analysis">
                 <h2>SEO Analyse Resultater</h2>
                 <p>En omfattende SEO-analyse ble gjennomført på de tre hovedsidene av nettstedet ved hjelp av Google Lighthouse.
@@ -117,10 +117,10 @@
                 </article>
             </section>
 
-            <!-- Accessibility Analysis Section -->
+            <!-- Accessibility Analyse Seksjon -->
             <section id="accessibility-analysis">
                 <h2>UU (Tilgjengelighets) Analyse</h2>
-                <!-- Lighthouse Accessibility Analysis -->
+                <!-- Lighthouse Accessibility Analyse -->
                 <section id="uu-analysis-lighthouse">
                     <h3>UU (Tilgjengelighets) Analyse</h3>
                     <p>Analysen utført med Lighthouse har identifisert viktige områder for forbedring i tilgjengelighet på tvers av
@@ -128,7 +128,7 @@
                         og lenker som mangler et gjenkjennelig navn. Disse problemene kan påvirke brukeropplevelsen for personer med
                         synshemming eller de som er avhengige av skjermlesere.</p>
                 
-                    <!-- Individual page analysis for index.html -->
+                    
                     <section id="index-uu-analysis">
                         <h4>Index.html Tilgjengelighetsanalyse</h4>
                         <p>Tilgjengelighetsscore: 87/100. Selv om siden skårer relativt høyt, vil forbedringer i fargekontrast og
@@ -136,7 +136,7 @@
                         <img src="img/Lighthouse_index.html_pre_change_accessibility.png" alt="Tilgjengelighetsanalyse for index.html">
                     </section>
                 
-                    <!-- Individual page analysis for produkt.html -->
+                    
                     <section id="produkt-uu-analysis">
                         <h4>Produkt.html Tilgjengelighetsanalyse</h4>
                         <p>Tilgjengelighetsscore: 86/100. Forbedringer anbefales spesielt for fargekontrast og tydelige navn på lenker
@@ -144,7 +144,7 @@
                         <img src="img/Lighthouse_produkt.html_pre_change_accessibility.png" alt="Tilgjengelighetsanalyse for produkt.html">
                     </section>
                 
-                    <!-- Individual page analysis for handlekurv.html -->
+                    
                     <section id="handlekurv-uu-analysis">
                         <h4>Handlekurv.html Tilgjengelighetsanalyse</h4>
                         <p>Tilgjengelighetsscore: 84/100. Selv om denne siden også følger mange beste praksiser for tilgjengelighet,
@@ -152,14 +152,13 @@
                         <img src="img/handlekurv.html_lighthouse_pre_change_accessibility.png" alt="Tilgjengelighetsanalyse for handlekurv.html">
                     </section>
                 
-                    <!-- Explanation about the steps to be taken -->
                     <p>Basert på disse funnene, vil de nødvendige tilgjengelighetsforbedringene inkludere å øke fargekontrasten mellom
                         bakgrunn og forgrunn samt å gi alle lenker beskrivende navn som kan identifiseres av skjermlesere. Disse
                         endringene vil bidra til å heve den generelle tilgjengelighetsscoren og gjøre nettstedet mer tilgjengelig for
                         alle brukere.</p>
                 </section>
 
-                <!-- WebAIM WAVE Analysis -->
+                <!-- WebAIM WAVE Analyse -->
                 <section id="webaim-uu-analysis">
                     <h3>WebAIM WAVE Analyse</h3>
                     <p>Ytterligere tilgjengelighetsanalyse med WebAIM's WAVE verktøy har identifisert lignende problemer som Lighthouse,
@@ -393,13 +392,72 @@
                 
             
 
-            <!-- Improvement Measures Section -->
+            <!-- Improvement Measures Seksjon -->
             <section id="improvement-measures">
-                <h2>Forbedringstiltak</h2>
-                <p>Her dokumenteres de tiltakene som ble gjort for å forbedre SEO og UU.</p>
-                <!-- Document the improvements made with before and after analysis -->
-                <!-- ... -->
+                <h2>Forbedringstiltak og Resultater</h2>
+                <p>I denne delen av analysen skal jeg ta for meg endringene som ble foreslått. 
+                    Deretter skal jeg implementere endringene i selve koden og dokumentere om de hadde noen innvirkning på analysescoren. Her dokumenteres de tiltakene som ble gjort for å forbedre SEO og UU.
+                    Under vil det komme en liste med oversikten over forbedringene jeg tok for meg, med påfølgende bilder for endring:</p>
+                <ul>
+                    <li>La til meta-beskrivelser på alle sider</li>
+                    <li>Oppdatere alt-tags ved bilder på siden</li>
+                    <li>Oppdatere title-tag i head</li>
+                    <li>Forbedre kontrast på teskt under bilder fra pixabay. Da WebAIM reagerte på dette.</li>
+                    <li>Oppdatere lenker uten destinasjon eller samme destinasjon.</li>
+                </ul>
+
+                </section>
+                    <section id="improvement-before-after">
+                        <h3>Forbedringer før og etter</h3>
+                        <p>Her kommer dokumentasjon på endringene som er implementert. </p>
+                        <section id="improvement-before-after-meta">
+                            <h4>Meta-tag implementering</h4>
+                            <img src="img/forbedringer_meta_tag.png" alt="Meta tag forbedringer">
+                            <p>Bildet er litt uklart, men her har jeg oppdatert alle html sidene med en egen meta-tag for å optimalisere siden fra et SEO perspektiv. Hver meta-tag er unik for hver side.</p>
+                        </section>
+                        <section id="improvement-before-after-alt">
+                            <h4>Alt-tag forbedringer</h4>
+                            <img src="img/forbedringer_alt_tag.png" alt="Alt-tag forbedringer før og etter">
+                            <p>På bildet ovenfor kan du se et bilde over endringer som er gjort på alt-taggene. Bildet viser både før og etter forbedring, som er markert med kommentarer</p>
+                        </section>
+                        <section id="improvement-before-after-title">
+                            <h4>Title-tag forbedring</h4>
+                            <img src="img/forbedringer_title_tag.png" alt="Title-tag forbedringer før og etter">
+                            <p>Bildet ovenfor viser endinger som er gjort på title-taggene. Før og etter resultater er vist ved kommentarer i koden.</p>
+                        </section>
+                        <section id="improvement-before-after-contrast">
+                            <h4>Forbedring av kontrast</h4>
+                            <p>Dersom du ser på bildet nedenfor kan vi se grunnen til at WebAIM reagerte på kontrasten på teskten under bildet. 
+                                Som du kan se, så kan dette være litt vanskelig å lese. For å forbedre dette har jeg wrappet html koden i en p-tag for så å gi den en klasse, 
+                                slik at jeg enkelt kunne targete teksten fra pixabay.</p>
+                                <h5>Kode</h5>
+                                <img src="img/forbedringer_contrast_after_change_code_.png" alt="Kontrast forbedringer kode">
+                                <h5>Før</h5>
+                                <img src="img/forbedringer_contrast_pre_change_.png" alt="Kontrast forbedringer før">
+                                <h5>Etter</h5>
+                                <img src="img/forbedringer_contrast_after_change_.png" alt="Kontrast forbedringer etter">
+                            <p>Deretter var det bare å implementere den samme taggen på alle bildene.</p>
+                        </section>
+                        <section id="improvement-before-after-links">
+                            <h4>Lenker uten destinasjon / samme destinasjon</h4>
+                            <p>Det siste som WebAIM og de andre analyse verktøyene reagerte på var linker som ikke førte til noe sted, eller førte til samme sted. 
+                                Dette var linker i navigasjonslinjen som linker til samme side, og linker i footeren som ikke hadde noen destinasjon. 
+                                For å fikse dette var det bare å fjerne linkene i footeren da var skobutikk ikke har noen faktisk Facebook, eller Instagramside. 
+                                Vi har også kun laget en av sidene i navigasjonensmenyen, så dette får vi heller ikke gjort så mye med, annet enn å fjerne eller la det være som det er nå.</p>
+                            
+                            <img src="img/forbedringer_links_.png" alt="Lenker uten destinasjon / samme destinasjon">
+                            <p>Ovenfor kan du se et bilde av koden før og etter når det gjelder facebook og Instagramsiden sine linker. 
+                                I og med at vi ikke har laget noe her så valgte jeg å fjerne det. Dette gjorde jeg ved å ta bort hele href taggen. Dersom det i fremtiden blit laget en facebook eller Instagramside så kan vi legge det til igjen. 
+                                Deretter var det bare å utføre disse endringene på de resterende html sidene.</p>
+                        </section>
+
+                </section>
+            <section>
+                
             </section>
+
+           
+
         </main>
         <footer>
             <!-- Bunnen av nettsiden, inneholder en liten navigasjonsmeny for ekstra informasjon, for eks. retur, kjøpsvilkår osv-->
@@ -430,3 +488,16 @@
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
