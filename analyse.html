@@ -404,6 +404,7 @@
                     <li>Oppdatere title-tag i head</li>
                     <li>Forbedre kontrast på teskt under bilder fra pixabay. Da WebAIM reagerte på dette.</li>
                     <li>Oppdatere lenker uten destinasjon eller samme destinasjon.</li>
+                    <li>Forbedre kontrast på tekst i footer copyright</li>
                 </ul>
 
                 </section>
@@ -441,22 +442,49 @@
                         <section id="improvement-before-after-links">
                             <h4>Lenker uten destinasjon / samme destinasjon</h4>
                             <p>Det siste som WebAIM og de andre analyse verktøyene reagerte på var linker som ikke førte til noe sted, eller førte til samme sted. 
-                                Dette var linker i navigasjonslinjen som linker til samme side, og linker i footeren som ikke hadde noen destinasjon. 
-                                For å fikse dette var det bare å fjerne linkene i footeren da var skobutikk ikke har noen faktisk Facebook, eller Instagramside. 
-                                Vi har også kun laget en av sidene i navigasjonensmenyen, så dette får vi heller ikke gjort så mye med, annet enn å fjerne eller la det være som det er nå.</p>
+                                Dette var linker i navigasjonslinjen som linker til samme side, og linker i footeren som ikke hadde noen destinasjon.  
+                                Vi har også kun laget en av sidene i navigasjonensmenyen, 
+                                så dette får vi ikke gjort så mye med, annet enn å fjerne eller la det være som det er nå. 
+                                Jeg velger å la det stå som det er. </p>
                             
-                            <img src="img/forbedringer_links_.png" alt="Lenker uten destinasjon / samme destinasjon">
+                            <img src="img/forbedringer_links_aria_.png" alt="Lenker uten destinasjon / samme destinasjon">
                             <p>Ovenfor kan du se et bilde av koden før og etter når det gjelder facebook og Instagramsiden sine linker. 
-                                I og med at vi ikke har laget noe her så valgte jeg å fjerne det. Dette gjorde jeg ved å ta bort hele href taggen. Dersom det i fremtiden blit laget en facebook eller Instagramside så kan vi legge det til igjen. 
+                                I og med at ikonene ikke har noen faktiske sider å linke til, så har jeg valgt å legge til en aria-label som heter "coming soon" og deretter gjort ikonene om til buttons for en bedre uu-opplevelse. 
+                                Dersom det i fremtiden blit laget en facebook eller Instagramside så kan vi legge det til igjen. 
                                 Deretter var det bare å utføre disse endringene på de resterende html sidene.</p>
                         </section>
-
+                        <section id="improvement-before-after-contrast-copyright">
+                            <h4>Kontrast ved copyright nederst i footer.</h4>
+                            <p>Lighthouse reagerer nå på at det ikke er god nok kontrast på copyright-teksten i bunnen på siden. 
+                                Dette fikser vi ved å skrive litt css som endrer tekst farge og opacity</p>
+                            <img src="img/forbedringer_contrast_footer.png" alt="Kontrast forbedringer i footer">
+                            <p>Ovenfor kan du se et bilde av CSS koden for endringen av tekst i footeren, nærmere sagt. Copyright-teksten som vi har lagt inn. 
+                                Dette fikest vi ved å bare endre litt på opacity verdien, slik at teksten ikke ble så gjennomsiktig.</p>
+                        </section>
+                        <section id="improvement-before-after-aria-form-label">
+                            <h4>Forbedre ARIA form-label for mer tilgjengelighet rundt den skjulte checkboxen som brukes til mobil toggle-menyen</h4>
+                            <p>Tilslutt så reagerer WebAIM på at den skjulte nav-toggle checkboxen ikke tilfredsstiller når det kommer til skjermlesere. 
+                                Derfor så gjør vi noen endringer her.</p>
+                            <img src="img/forbedringer_aria_form_label.png" alt="ARIA form-label for å forbedre tilgjengelighet rundt den skjulte checkboxen som brukes til mobil toggle-menyen">
+                            <p>Ovenfor kan du se et bilde av koden som er implementert for å gjøre endringer rundt det WebAIM reagerte på med den 
+                                skjulte nav-toggleboksen som jeg laget for å få en responsiv mobilmeny som man kan åpen og lukke. Den var derimot ikke veldig venlig når det kom til tilgjengelighet og 
+                                derfor er det lagt til en aria-label som forklarer skjermlesere hva denne boksen brukes til. Bildet viser koden før og koden etter at endringer er gjort. 
+                                Tilslutt er det lagt til litt CSS slik at vi kan gjemme den "usynlige teksten" , som skjermleserbrukere kan benytte seg av</p>
+                        </section>
+                </section>
+                <section id="results-from-improvements">
+                    <h3>Resultater fra forbedringer</h3>
+                    <p>Nå som vi har gjennomført en del endringer i følge både WebAIM, Lighthouse og ChatGPT så er det på tide å kjøre analysen igjen for å se om noe har endret seg.</p>
+                    <section id="results-from-improvements-lighthouse">
+                        <h4>Resultater fra ny analyse fra Lighthouse</h4>
+                    </section>
+                    <section id="results-from-improvements-webaim">
+                        <h4>Resultater fra ny analyse fra WebAIM</h4>
+                    </section>
                 </section>
             <section>
-                
-            </section>
 
-           
+            </section>
 
         </main>
         <footer>
@@ -465,8 +493,8 @@
                 <!--En beholder som inneholder footeren-->
                 <div class="social-icons">
                     <!--En beholder som inneholder sosiale medier ikoner-->
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <button aria-label="Instagram coming soon"><i class="fa-brands fa-instagram"></i></button>
+                    <button aria-label="Facebook coming soon"><i class="fa-brands fa-facebook"></i></button>
                 </div>
                 <nav class="footer-nav">
                     <!--En klasse som inneholder ul listen med footer navigasjonen-->
@@ -488,12 +516,6 @@
     </body>
 
 </html>
-
-
-
-
-
-
 
 
 

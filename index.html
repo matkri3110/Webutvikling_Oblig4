@@ -18,9 +18,10 @@
         <header>
             <!--Toppseksjonen på nettsiden, inneholder navigasjon og viktig info-->
             <nav class="nav">
-                <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+                <input type="checkbox" id="nav__checkbox" class="nav__checkbox" aria-label="Toggle navigation menu">
                 <!-- Skjult avkrysningsboks brukes til å håndtere klikkhendelse for mobilmenyen -->
                 <label for="nav__checkbox" class="nav__toggle">
+                    <span class="visually-hidden">Toggle navigation menu</span>
                     <i id="search-box" class="fa-solid fa-magnifying-glass"></i>
                     <i id="menu" class="fa-solid fa-bars"></i>
                     <i id="close" class="fa-solid fa-xmark"></i>
@@ -29,7 +30,7 @@
                 <ul class="nav__menu">
                     <li><a href="index.html" id="Logo">BIRDIES</a></li>
                     <li><a href="produkt.html">Herresko</a></li>
-                    <li><a href="produkt.html">Damesko</li>
+                    <li><a href="produkt.html">Damesko<a/></li>
                     <li><a href="produkt.html">Junior</a></li>
                     <li><a href="#">Min Konto</a></li>
                     <li><a href="handlekurv.html">Handlekurv</a></li>
@@ -81,8 +82,8 @@
                 <!--En beholder som inneholder footeren-->
                 <div class="social-icons">
                     <!--En beholder som inneholder sosiale medier ikoner-->
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
+                    <button aria-label="Instagram coming soon"><i class="fa-brands fa-instagram"></i></button>
+                    <button aria-label="Facebook coming soon"><i class="fa-brands fa-facebook"></i></button>
                 </div>
                 <nav class="footer-nav">
                     <!--En klasse som inneholder ul listen med footer navigasjonen-->
@@ -103,3 +104,10 @@
         </footer> 
     </body>
 </html>
+
+
+
+
+
+
+

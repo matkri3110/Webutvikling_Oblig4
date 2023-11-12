@@ -85,6 +85,19 @@ header{
     font-size: 1.2rem;
 }
 
+/* Gjem form-label for visuelt-usynlig kode */
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+border: 0;
+}
+
+
 #nav__checkbox:checked ~ ul.nav__menu li{
     display: block;
 }
@@ -215,7 +228,7 @@ footer{
 
 }
 
-.social-icons i{
+.social-icons a{
     text-decoration: none;
     padding: 10px;
     background-color: white;
@@ -270,6 +283,11 @@ footer{
     margin: 0px 5px;
 }
 
+.footer-bottom p {
+    font-size: 1.2em;
+    color: black;
+    opacity: 1;
+}
 
 
 * body, p,a,ul,li{
