@@ -15,13 +15,15 @@
 </head>
 
     <body>
+        <a href="#maincontent" class="skip-link">Skip til hovedinnhold</a>
         <!-- "Body" seksjonen inneholder hoveddelen av nettstedets innhold. -->
         <header>
             <!--Toppseksjonen på nettsiden, inneholder navigasjon og viktig info-->
             <nav class="nav">
-                <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+                <input type="checkbox" id="nav__checkbox" class="nav__checkbox" aria-label="Toggle navigation menu">
                 <!-- Skjult avkrysningsboks brukes til å håndtere klikkhendelse for mobilmenyen -->
                 <label for="nav__checkbox" class="nav__toggle">
+                    <span class="visually-hidden">Toggle navigation menu</span>
                     <i id="search-box" class="fa-solid fa-magnifying-glass"></i>
                     <i id="menu" class="fa-solid fa-bars"></i>
                     <i id="close" class="fa-solid fa-xmark"></i>
@@ -38,7 +40,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="maincontent">
             <h1>Nettsted Analyse og Forbedring</h1>
             
             <!-- Keyword Research Seksjon -->
@@ -406,8 +408,8 @@
                     <li>Oppdatere lenker uten destinasjon eller samme destinasjon.</li>
                     <li>Forbedre kontrast på tekst i footer copyright</li>
                 </ul>
-
                 </section>
+
                     <section id="improvement-before-after">
                         <h3>Forbedringer før og etter</h3>
                         <p>Her kommer dokumentasjon på endringene som er implementert. </p>
@@ -477,14 +479,75 @@
                     <p>Nå som vi har gjennomført en del endringer i følge både WebAIM, Lighthouse og ChatGPT så er det på tide å kjøre analysen igjen for å se om noe har endret seg.</p>
                     <section id="results-from-improvements-lighthouse">
                         <h4>Resultater fra ny analyse fra Lighthouse</h4>
+                        <img src="img/Index.html_lighthouse_after_change_seo.png" alt="SEO forbedringer for index.html">
+                        <img src="img/Index.html_lighthouse_after_change_accessibility.png" alt="Tilgjengelighetsanalyse for index.html">
+                        <p>Hvis vi ser på de to bildene ovenfor så er dette bilder fra den nye analysen av index.html gjort av lighthouse. Vi kan se at vi har fått en betraktlig høyere score, noe som er positivt. 
+                            Vi har en SEO score på 100 og en Accessibility score på 95. Dette er svært bra og betyr at siden er godt optimalisert for søkemotorer og at den er godt tilgjengelig for alle brukere.</p>
+                        <img src="img/produkt.html_lighthouse_after_change_seo.png" alt="SEO forbedringer for produkt.html">
+                        <img src="img/produkt.html_lighthouse_after_change_accessibility.png" alt="Tilgjengelighetsanalyse for produkt.html">
+                        <p>Ovenfor kan du se de to resultatene fra den nye lighthouse analysen av produkt.html siden, her har vi også fått svært gode resultater. 
+                            Vi har en SEO score på 99 og vi har en tilgjengelighets score på 100. 
+                            Dette er en svært god score og betyr at siden er godt optimalisert for søkemotorer og at den er godt tilgjengelig for alle brukere</p>
+                        <img src="img/handlekurv.html_lighthouse_after_change_seo.png" alt="SEO forbedringer for handlekurv.html">
+                        <img src="img/handlekurv.html_lighthouse_after_change_accessibility.png" alt="Tilgjengelighetsanalyse for handlekurv.html">
+                        <p>Ovenfor kan du se de to resultatene fra den nye lighthouse analysen av handlekurv.html siden, her har vi også fått svært
+                        gode resultater. Vi har en SEO score på 98 og vi har en tilgjengelighets score på 100. Dette er en svært god score og
+                        betyr at siden er godt optimalisert for søkemotorer og at den er godt tilgjengelig for alle brukere</p>
                     </section>
                     <section id="results-from-improvements-webaim">
                         <h4>Resultater fra ny analyse fra WebAIM</h4>
+                        <img src="img/index.html_webaim_after_change.png" alt="WebAIM WAVE tilgjengelighetsanalyse for index.html">
+                        <img src="img/index.html_webaim_after_change_details.png" alt="WebAIM WAVE tilgjengelighetsanalyse for index.html">
+                        <p>Dette er resultater fra den nye analysen med WebAIM for index.html siden, her kan vi se at vi har løst de fleste problemene, det eneste som gjenstår er de to sidene i navigasjonen som linker til samme side. 
+                            Men det har jeg valgt å ikke gjøre noe med grunnet at jeg ikke vil fjerne disse. 
+                            Men totalt sett så har de forbedringene vi har implementert hatt god suksess og har ført til at siden har svært god tilgjengelighet.
+                        </p>
+                        <img src="img/produkt.html_webaim_after_change.png" alt="WebAIM WAVE tilgjengelighetsanalyse for produkt.html">
+                        <img src="img/produkt.html_webaim_after_change_details.png" alt="WebAIM WAVE tilgjengelighetsanalyse for produkt.html">
+                        <p>Dette er resultater fra den nye analysen med WebAIM for produkt.html siden, her kan vi se at vi har løst de fleste problemene, det eneste
+                            som gjenstår er sidene i navigasjonen som linker til samme side.
+                            Men det har jeg valgt å ikke gjøre noe med grunnet at jeg ikke vil fjerne disse. 
+                            Totalt sett så har de forbedringene vi har implementert hatt god suksess og har ført til at siden har svært god
+                            tilgjengelighet.</p>
+                        <img src="img/handlekruv.html_webaim_after_change.png" alt="WebAIM WAVE tilgjengelighetsanalyse for handlekurv.html">
+                        <img src="img/handlekruv.html_webaim_after_change_details.png" alt="WebAIM WAVE tilgjengelighetsanalyse for handlekurv.html">
+                        <p>Dette er resultater fra den nye analysen med WebAIM for handlekurv.html siden, her kan vi se at vi har løst de fleste
+                            problemene, men vi har fortsatt et problem med kontrasten på teksten til bildet. Dette er en ting vi fikset i forrige del av oppgaven, 
+                            men av en eller annen grunn så har den hengt seg opp. Så jeg får rett og slett ikke endret på den. 
+                            Totalt sett så har de forbedringene vi har implementert hatt god suksess og har ført til at siden har svært god
+                            tilgjengelighet, med unntak av kontrasten på teksten.</p>
                     </section>
                 </section>
-            <section>
-
+            <section id="accessibility">
+                <h2>Tilgjengelighet</h2>
+                <p>Jeg har nå testet nettsiden ved å bruke skjermleseren som er innebygget i windowsmaskiner. Jeg stilte inn leseren slik at den skulle lese opp det jeg holdt musepekeren over.
+                    Alt fungerer godt og, det var ingenting som ble lest opp rart. Dette gjelder alle sidene på nettstedet. 
+                    Det er først når du benytter deg av et slikt verktøy som dette at du forstår hvor viktig det er med gode beskrivelser på innholdet ditt.
+                    Når det kommer til navigasjon ved bruk av tastaturet så fungerer det helt fint. 
+                    Man kan enkelt se hvor man befinner seg, man kan bevege seg frem og tilbake og tilslutt kan man gå videre ved bruk av enter.</p>
+                <img src ="img/maincontent_skip_function.png" alt="Bilde av skip til hovedinnhold snarvei">
+                <p>På bildet ovenfor kan du se at jeg har implementert en skip til hovedinnhold snarvei. Koden er implementert på alle html sidene. 
+                    Det er også lagt til litt CSS slik at vi kan skjule snarveien for de brukerne som ikke trenger den.</p>
+                <h3>ARIA-attributter</h3>
+                <p>I denne delen av oppgaven skal vi implementere noen aria-attributter for å forbedre brukeropplevelsen. 
+                    En aria-attributt er en del av ARIA-spesifikasjonen som brukes for å øke tilgjengeligheten på nettet for personer med funksjonshemninger. 
+                    Så nå skal vi implementere noen aria-attributter slik at siden vår kan bli enda mer tilgjengelig for slike brukergrupper.</p>
+                <section id="aria-attribute-implementation">
+                    <h4>ARIA-attributter implementert</h4>
+                    <p>Tidligere i denne oppgaven så jobbet vi med forbedring av seo og tilgjengelighet, og under denne prosessen 
+                        så måtte jeg allerede implementere noen aria-attributter for å øke tilgjengeligheten.</p>
+                    <img src="img/aria_implementering.png" alt="Oversikt over implementering av ARIA-attributter">
+                    <p>Ovenfor kan du se en oversikt over alle aria-attributtene som jeg har implementert. De tre første attributtene ble implementert tidligere i denne 
+                        oppgaven, men de resterende ble lagt til nå.
+                        attributtene er også lagt til på alle html sidene, men de er bare dokumentert en gang. 
+                        Av attributtene så har jeg valgt, å gi ulike role-attributes til den semantiske strukturen på nettsiden. 
+                        For eksempel role="navigation" som henviser til at dette elementet er en del av navigasjonen på nettsiden. 
+                        Jeg har også valgt å gi en role="main" til hovedinnholdet på nettsiden. 
+                        Tilslutt harjeg også lagt til en role="section" for å vise til de ulike seksjonene på nettsiden. 
+                    </p>
+                </section>    
             </section>
+
 
         </main>
         <footer>
@@ -516,9 +579,6 @@
     </body>
 
 </html>
-
-
-
 
 
 

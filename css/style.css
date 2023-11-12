@@ -85,7 +85,7 @@ header{
     font-size: 1.2rem;
 }
 
-/* Gjem form-label for visuelt-usynlig kode */
+/* Gjem form-label */
 .visually-hidden {
 position: absolute;
 width: 1px;
@@ -97,6 +97,26 @@ clip: rect(0, 0, 0, 0);
 border: 0;
 }
 
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    /* or your preferred background color */
+    color: white;
+    /* or your preferred text color */
+    padding: 8px;
+    z-index: 100;
+    /* to ensure it's above other items */
+    transition: top 0.3s;
+    text-decoration: none;
+    /* optional: if you want to remove underline */
+}
+
+.skip-link:focus {
+    top: 0;
+}
 
 #nav__checkbox:checked ~ ul.nav__menu li{
     display: block;

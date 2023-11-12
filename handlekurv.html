@@ -17,10 +17,11 @@
 </head>
 
 <body>
+    <a href="#maincontent" class="skip-link">Skip til hovedinnhold</a>
     <!-- "Body" seksjonen inneholder hoveddelen av nettstedets innhold. -->
-    <header>
+    <header role="banner">
         <!--Toppseksjonen på nettsiden, inneholder navigasjon og viktig info-->
-        <nav class="nav">
+        <nav class="nav" role="navigation">
             <a id="brodsmule" href="index.html">Hjem > Handlekurv</a>
             <!-- Brødsmulesti for bedre brukernavigasjon -->
             <input type="checkbox" id="nav__checkbox" class="nav__checkbox" aria-label="Toggle navigation menu">
@@ -43,7 +44,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main role="main" id="maincontent">
         <!-- Hovedinnholdet på siden -->
         <div class="container">
             <!-- En beholder som inneholder grid for siden.-->
@@ -54,7 +55,7 @@
                 <p>Ønsker du å fortsette å handle eller gå til kassen?</p>
                 <a href="index.html" class="shop-nå-btn">Fortsett å handle</a>
             </article>
-            <section class="flex-section-sneaker">
+            <section role="section" class="flex-section-sneaker">
                 <!-- En seksjon som brukes til layout for siden -->
                 <img src="img/sneaker.png" alt="Din BIRDIES handlekurv med valgte golfsko klare for kjøp">
                 <p class="image-credit">Image by<a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira</a> from<a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a></p>

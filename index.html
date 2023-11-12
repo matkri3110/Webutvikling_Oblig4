@@ -14,10 +14,11 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
+        <a href="#maincontent" class="skip-link">Skip til hovedinnhold</a>
         <!-- "Body" seksjonen inneholder hoveddelen av nettstedets innhold. -->
-        <header>
+        <header role="banner">
             <!--Toppseksjonen på nettsiden, inneholder navigasjon og viktig info-->
-            <nav class="nav">
+            <nav class="nav" role="navigation">
                 <input type="checkbox" id="nav__checkbox" class="nav__checkbox" aria-label="Toggle navigation menu">
                 <!-- Skjult avkrysningsboks brukes til å håndtere klikkhendelse for mobilmenyen -->
                 <label for="nav__checkbox" class="nav__toggle">
@@ -38,11 +39,11 @@
                 </ul>
             </nav>
         </header>
-        <main class="category-overview">
+        <main role="main" id="maincontent" class="category-overview">
             <!-- Hovedinnholdet på siden -->
                 <div class="container">
                     <!-- En beholder som inneholder grid for siden.-->
-                <section class="flex-section-kategorier">
+                <section role="section" class="flex-section-kategorier">
                     <!-- En seksjon som brukes til layout for siden -->
                     <article class="product-section-salg">
                         <!-- En seksjon som brukes til design for siden-->
