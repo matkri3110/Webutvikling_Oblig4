@@ -4,9 +4,22 @@
 <head>
     <!-- "Head" seksjonen, inneholder metadata, koblinger til stylesheet og komponenter som FontAwsome -->
     <meta charset="UTF-8">
-    <meta name="description"content="Bla gjennom BIRDIES sitt utvalg av komfortable og stilige golfsko for herre. Kvalitetssko designet for optimal ytelse og komfort på golfbanen.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herresko Kolleksjon - Komfortable og Stilige Golfsko | BIRDIES</title>
+    <meta name="description" content="Utforsk vårt sortiment av herresko perfekt for golf. 
+    Finn stilige og funksjonelle golfsko hos BIRDIES.">
+    <!-- Open Graph / Facebook & Instagram Metadata -->
+    <meta property="og:title" content="Herresko Kolleksjon | BIRDIES" />
+    <meta property="og:description" content="Oppdag stilige og komfortable herresko designet for golfspillere. 
+    Klikk for å se vår kolleksjon." />
+    <meta property="og:image" content="https://itstud.hiof.no/~mathikr/webutvikling/Webutvikling_Oblig4/img/sneaker.png" />
+    <meta property="og:url" content="https://itstud.hiof.no/~mathikr/webutvikling/Webutvikling_Oblig4/produkt.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BIRDIES" />
+    <!-- Image width and height dimensjoner -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- Link til normalize.css-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <!--Lenker til Font Awsome-ikonstilene for UI-elementer-->
     <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
@@ -50,34 +63,68 @@
         <h1>Herresko</h1>
         <section role="section" class="flex-section-produkt">
             <!-- En seksjon som brukes til layout for siden -->
-            <article>
-                <p class="image-credit"><img src="img/sneaker.png" alt="Golfsko herre fra BIRDIES med et ergonomisk og komfortabelt design">
-                Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a></p>
+            <article itemscope itemtype="http://schema.org/Product">
+                <p class="image-credit"><img src="img/sneaker.png" alt="Golfsko herre fra BIRDIES med et ergonomisk og komfortabelt design" itemprop="image">
+                Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">
+                    Joseph Mucira</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a></p>
                 <!-- Produktbilde, med kreditering for bildet -->
-                <p class="priser">1749,-</p>
                 <!-- klasse for priser på produkter -->
-                <p class="størrelser">Størrelse: 42</p>
-                <!-- klasse for størrelser på produkter -->
-                <a href="handlekurv.html" class="shop-nå-btn">Legg i handlekurv</a>
-                <!-- knapp for å legge til produkter i handlekurv -->
-            </article>
-            <article>
-                <img src="img/sneaker.png" alt="Golfsko herre fra BIRDIES med i stilrent design">
-                <p class="image-credit">Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a></p>
-                <!-- Produktbilde, med kreditering for bildet -->
-                <p class="priser">1350,-</p>
-                <p class="størrelser">Størrelse: 42</p>
-                <a href="handlekurv.html" class="shop-nå-btn">Legg i handlekurv</a>
-            </article>
-            <article>
-                <img src="img/sneaker.png" alt="Golfsko herre fra BIRDIES med et stilrent og komfortabelt design">
-                <p class="image-credit">Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a></p>
-                <!-- Produktbilde, med kreditering for bildet -->
-                <p class="priser">1499,-</p>
-                <!--klasse for priser for produkter-->
+                <p itemprop="name" class="priser">Golfsko Herre med trendy design</p>
+                <p itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                    <meta itemprop="name" content="Nike" />
+                </p>
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="NOK" />
+                    <meta itemprop="price" content="1759" />
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                    <p class="priser">Pris: 1759,- NOK</p>
+                </div>
                 <p class="størrelser">Størrelse: 42</p>
                 <!--klasse for størrelser for produkter-->
-                <a href="handlekurv.html" class="shop-nå-btn">Legg i handlekurv</a>
+                <a href="handlekurv.html" class="shop-nå-btn" itemprop="url">Legg i handlekurv</a>
+                <!-- knapp for å legge til produkter i handlekurv -->
+            </article>
+
+            <article itemscope itemtype="http://schema.org/Product">
+                <img src="img/sneaker.png" alt="Golfsko herre fra BIRDIES med stilrent design" itemprop="image">
+                <p class="image-credit">Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira
+                </a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a></p>
+                <!-- Produktbilde, med kreditering for bildet -->
+                <p itemprop="name" class="priser">Golfsko Herre i Stilrent Design</p>
+                <p itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                    <meta itemprop="name" content="Nike" />
+                </p>
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="1350" />
+                    <meta itemprop="priceCurrency" content="NOK" />
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                    <p class="priser">Pris: 1350,- NOK</p>
+                </div>
+                <p class="størrelser">Størrelse: 42</p>
+                <!--klasse for størrelser for produkter-->
+                <a href="handlekurv.html" class="shop-nå-btn" itemprop="url">Legg i handlekurv</a>
+            </article>
+
+            <article itemscope itemtype="http://schema.org/Product">
+                <img src="img/sneaker.png" alt="Golfsko herre fra BIRDIES med et stilrent og komfortabelt design" itemprop="image">
+                <p class="image-credit">Image by <a href="https://pixabay.com/users/webtechexperts-10518280/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Joseph Mucira
+
+                </a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5408667">Pixabay</a></p>
+                <!-- Produktbilde, med kreditering for bildet -->
+                <p itemprop="name" class="priser">Golfsko Herre i Komfortabelt Design</p>
+                <!--klasse for priser for produkter-->
+                <p itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                    <meta itemprop="name" content="Nike" />
+                </p>
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="NOK" />
+                    <meta itemprop="price" content="1499" />
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                    <p class="priser">Pris: 1499,- NOK</p>
+                </div>
+                <p class="størrelser">Størrelse: 42</p>
+                <!--klasse for størrelser for produkter-->
+                <a href="handlekurv.html" class="shop-nå-btn" itemprop="url">Legg i handlekurv</a>
                 <!--knapp for å legge til produkter i handlekurv-->
             </article>
         </section>             
